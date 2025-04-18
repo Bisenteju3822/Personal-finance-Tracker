@@ -8,11 +8,11 @@ const bodyParser = require('body-parser');
 const personalRoute = require("./routes/personalRoute");
 const port = process.env.PORT || 8000;
 
-<<<<<<< HEAD
+
 mongoose.connect(process.env.MONGO_URI).then(() => {
   console.log("DB connected!!!");
 });
-=======
+
 // Replace 'your-ngrok-url' with the actual ngrok URL provided
 const mongoUrl = process.env.MONGODB_URI || "mongodb://your-ngrok-url:27017/Personalfinance";
 
