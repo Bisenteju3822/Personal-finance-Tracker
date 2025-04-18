@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI).then(() => {
 });
 
 // Replace 'your-ngrok-url' with the actual ngrok URL provided
-const mongoUrl = process.env.MONGODB_URI || "mongodb://your-ngrok-url:27017/Personalfinance";
+const mongoUrl = process.env.MONGODB_URI || "";
 
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
@@ -22,7 +22,6 @@ mongoose.connect(mongoUrl, {
 })
 .then(() => console.log("DB connected!!!"))
 .catch(err => console.error("DB connection error:", err));
->>>>>>> 9be06bd7294d4861bb85ccc1bb428e6809e19c04
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
